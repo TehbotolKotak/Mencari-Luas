@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Luas Bangun Datar</title>
+</head>
+<body>
+
+    <h1>Kalkulator Luas Bangun Datar</h1>
+
+    <form>
+        <label for="shape">Pilih Bangun Datar:</label>
+        <select id="shape" name="shape">
+            <option value="segitiga">Segitiga</option>
+            <option value="lingkaran">Lingkaran</option>
+            <option value="bujurSangkar">Bujur Sangkar</option>
+            <option value="jajaranGenjang">Jajaran Genjang</option>
+        </select>
+        <br><br>
+
+        <div id="segitigaInputs">
+            <label for="alas">Alas (cm):</label>
+            <input type="number" id="alas" name="alas" placeholder="Masukkan alas segitiga">
+            <br><br>
+            <label for="tinggi">Tinggi (cm):</label>
+            <input type="number" id="tinggi" name="tinggi" placeholder="Masukkan tinggi segitiga">
+            <br><br>
+        </div>
+
+        <div id="lingkaranInputs">
+            <label for="jariJari">Jari-jari (cm):</label>
+            <input type="number" id="jariJari" name="jariJari" placeholder="Masukkan jari-jari lingkaran">
+            <br><br>
+        </div>
+
+      
+        <div id="bujurSangkarInputs">
+            <label for="sisi">Panjang sisi (cm):</label>
+            <input type="number" id="sisi" name="sisi" placeholder="Masukkan panjang sisi bujur sangkar">
+            <br><br>
+        </div>
+
+
+        <div id="jajaranGenjangInputs">
+            <label for="alasJajaran">Alas (cm):</label>
+            <input type="number" id="alasJajaran" name="alasJajaran" placeholder="Masukkan alas jajaran genjang">
+            <br><br>
+            <label for="tinggiJajaran">Tinggi (cm):</label>
+            <input type="number" id="tinggiJajaran" name="tinggiJajaran" placeholder="Masukkan tinggi jajaran genjang">
+            <br><br>
+        </div>
+
+    
+        <button type="submit">Hitung Luas</button>
+    </form>
+
+    <br><br>
+    <div id="hasilLuas">
+        <h2>Hasil Luas:</h2>
+        <p id="luas"></p>
+    </div>
+
+</body>
+</html>
